@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0rem 14rem;
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+#logo{
+    height: 9rem;
+    width: 11rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#color1{
+    color: rgb(77, 224, 77)
+}
+#color2{
+    color: rgb(54, 102, 190)
+}
+#color3{
+    color: orange
+}
+h3{
+    color: rgb(194, 126, 0)
+}
+.main-display{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 3rem;
+}
+h1{
+    color: orange;
+}
+.picture-gallery > img{
+    height: 15rem;
+    width: 15rem;
+}
+.text{
+    text-align: justify;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+}
+.header-1{
+    font-family: 'Dangrek', cursive;
+    text-align: center;
+}
+.picture-gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.cursive{
+    font-family: 'Dangrek', cursive;
+}
+.school-name{
+    font-family: 'Dangrek', cursive;
+}
+a {
+    text-decoration: none;
+    color: white;
+    text-align: center
+}
+.footer-paragraph{
+    background-color: rgb(0, 161, 182);
+    height: 7rem;
+}
+.footer-paragraph{
+    padding-top: 3.5rem;
+    text-align: center;
+}
+.footer-paragraph > div > a{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
+}
+@media screen and (max-width: 427px) {
+    body{
+        margin: 0rem 0rem
+    }
+    .main-display{
+        display: block;
+    }
+    .header-1{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .text{
+        letter-spacing: 0.05rem;
+        font-size: 1rem;
+        margin: 0rem 1rem;
+    }
+    .picture-gallery{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3rem;
+    }
+    .picture-gallery > img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .header > h3{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .footer-paragraph{
+        padding-bottom: 4rem;
+    }
+}
+@media screen and (max-width: 376px) {
+    .picture-gallery{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        margin-left: 1rem;
+    }
+    .footer-paragraph{
+        padding-bottom: 4rem;
+    }
+}
+@media screen and (max-width: 321px) {
+    .picture-gallery > img{
+        width: 17rem;
+        height: 16rem
+    }
+    .picture-gallery{
+        margin-right: 3.6rem;
+    }
+    .footer-paragraph{
+        padding-bottom: 4rem;
+    }
+}
